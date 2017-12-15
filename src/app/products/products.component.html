@@ -1,0 +1,13 @@
+<div [ngStyle]="{
+  background: 'khaki'
+  }">
+  <h3>This is a Products Component</h3>
+  <table border="1">
+    <tr *ngFor="let p of products">
+      <td>{{ p.ProductID }}</td>
+      <td>{{ p.ProductName }}</td>
+      <td>${{ p.UnitPrice }}</td>
+      <td>{{ p.Quantity }}</td>
+    </tr>
+  </table>
+</div>
